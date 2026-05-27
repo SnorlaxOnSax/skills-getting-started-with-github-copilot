@@ -59,10 +59,11 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d8def5;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
@@ -72,6 +73,120 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #e8edff;
+  color: #1a237e;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.activity-description {
+  color: #445;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f8;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.participants-heading h5 {
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.participants-count {
+  font-size: 13px;
+  color: #5c678d;
+  font-weight: 700;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  color: #2f3a56;
+}
+
+.participants-list li {
+  margin-bottom: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #dce3fb;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.participant-name {
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-btn {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: #fde7ea;
+  color: #b42332;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.participant-remove-btn:hover {
+  background: #fbcfd6;
+  transform: translateY(-1px);
+}
+
+.participant-remove-btn:focus-visible {
+  outline: 3px solid rgba(26, 35, 126, 0.25);
+  outline-offset: 2px;
+}
+
+.participants-empty {
+  color: #6b7280;
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .activity-card-header,
+  .participants-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .form-group {
